@@ -1,0 +1,26 @@
+{
+	"name": "fate",
+	"displayName": "Fate",
+	"description": "Fate Language Support",
+	"version": "0.0.1",
+	"publisher": "kode4food",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "fate",
+			"aliases": ["Fate", "fate"],
+			"extensions": [".fate"],
+			"configuration": "./fate.configuration.json"
+		}],
+		"grammars": [{
+			"language": "fate",
+			"scopeName": "source.fate",
+			"path": "./syntaxes/fate.tmLanguage"
+		}]
+	}
+}
