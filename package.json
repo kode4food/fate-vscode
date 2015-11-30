@@ -8,7 +8,8 @@
 		"vscode": "^0.10.1"
 	},
 	"categories": [
-		"Languages"
+		"Languages",
+    "Snippets"
 	],
 	"contributes": {
 		"languages": [{
@@ -21,6 +22,10 @@
 			"language": "fate",
 			"scopeName": "source.fate",
 			"path": "./syntaxes/fate.tmLanguage"
-		}]
+		}],
+    "snippets": [{
+      "language": "fate",
+      "path": "./snippets/snippets.json"
+    }]
 	}
 }
