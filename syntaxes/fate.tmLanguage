@@ -30,7 +30,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(self|nil|true|false)\b</string>
+					<string>\b(self|Some|None|true|false)\b</string>
 					<key>name</key>
 					<string>constant.language</string>
 				</dict>
@@ -201,7 +201,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(for|def|when|from|import|export|let|if|unless|do|with|as|in|else|end|where|select|return)\b</string>
+					<string>\b(for|def|when|from|import|export|let|if|unless|as|in|else|end|where|select|return)\b</string>
 					<key>name</key>
 					<string>keyword.control</string>
 				</dict>
