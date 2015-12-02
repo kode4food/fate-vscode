@@ -1,13 +1,8 @@
-# README
-## This is the README for your extension "fate" 
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+# Fate Language Support for Visual Studio Code
 
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
+Fate is a programming language prototype that compiles into Node.js modules.  It is a mostly functional language, providing first-class patterns, invocation guards, list comprehensions, and flexible function application.
 
+This Extension provides Syntax Highlighting and Language Snippets
+.
 ### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-** Enjoy!**
+* [The Fate Programming Language](http://www.fate-lang.org)
