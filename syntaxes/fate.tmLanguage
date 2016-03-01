@@ -125,7 +125,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>([\-&amp;~?+*\/|:@=(),\.\[\]&lt;&gt;{}])</string>
+					<string>([\-~?+*\/|:@=(),\.\[\]&lt;&gt;{}])</string>
 					<key>name</key>
 					<string>keyword.operator</string>
 				</dict>
@@ -201,7 +201,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(for|def|when|from|import|export|let|if|unless|as|in|else|end|where|select|return|reduce|order|group|by)\b</string>
+					<string>\b(for|def|do|await|from|import|export|let|if|unless|as|in|else|end|where|select|return|reduce)\b</string>
 					<key>name</key>
 					<string>keyword.control</string>
 				</dict>
