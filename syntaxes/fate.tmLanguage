@@ -201,7 +201,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(for|def|do|await|any|all|from|import|export|let|if|unless|as|in|else|end|where|select|return|reduce)\b</string>
+					<string>\b(for|def|do|await|any|all|when|from|import|export|let|if|unless|as|in|else|end|where|select|return|reduce)\b</string>
 					<key>name</key>
 					<string>keyword.control</string>
 				</dict>
