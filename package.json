@@ -2,7 +2,7 @@
   "name": "fate",
   "displayName": "Fate",
   "description": "Fate Language Support",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "engines": {
     "vscode": "^0.10.1"
   },
