@@ -1,158 +1,164 @@
 {
-	"lambda": {
+	"la": {
     "prefix": "la",
+    "body": "${1:args} → ${2:expr}",
+    "description": "lambda function",
+    "scope": "source.fate"
+	},
+	"lp": {
+    "prefix": "lp",
     "body": "(${1:args} → ${2:expr})",
     "description": "lambda function",
-    "scope": "source.fate - meta.tag.other.html"
-	},	
+    "scope": "source.fate"
+	},
 	"defa": {
 		"prefix": "defa",
 		"body": "def ${1:func_name}(${2:args})\n\t$0\nend",
 		"description": "def() … end",
-		"scope": "source.fate - meta.tag.other.html"
+		"scope": "source.fate"
 	},
 	"defw": {
 		"prefix": "defw",
 		"body": "def ${1:func_name}(${2:args}) where ${3:guard}\n\t$0\nend",
 		"description": "def() where … end",
-		"scope": "source.fate - meta.tag.other.html"
+		"scope": "source.fate"
 	},
 	"def": {
 		"prefix": "def",
 		"body": "def ${1:func_name}\n\t$0\nend",
 		"description": "def … end",
-		"scope": "source.fate - meta.tag.other.html"
+		"scope": "source.fate"
 	},
 	"fore": {
 		"prefix": "fore",
 		"body": "for ${1:item} in ${2:list}\n\t$3\nelse\n\t$0\nend",
 		"description": "for … else … end",
-		"scope": "source.fate - meta.tag.other.html"
+		"scope": "source.fate"
 	},
 	"forw": {
 		"prefix": "forw",
 		"body": "for ${1:item} in ${2:list} where ${3:guard}\n\t$0\nend",
 		"description": "for where … end",
-		"scope": "source.fate - meta.tag.other.html"
+		"scope": "source.fate"
 	},
 	"forn": {
 		"prefix": "forn",
 		"body": "for ${1:item} in ${2:list}, ${3:sub_item} in ${4:sub_list}\n\t$0\nend",
 		"description": "nested for … end",
-		"scope": "source.fate - meta.tag.other.html"
+		"scope": "source.fate"
 	},
 	"for": {
 		"prefix": "for",
 		"body": "for ${1:item} in ${2:list}\n\t$0\nend",
 		"description": "for … end",
-		"scope": "source.fate - meta.tag.other.html"
+		"scope": "source.fate"
 	},
 	"froma": {
 		"prefix": "froma",
 		"body": "from ${1:module} import ${2:symbol} as ${3:alias}",
 		"description": "from … import … as",
-		"scope": "source.fate - meta.tag.other.html"
+		"scope": "source.fate"
 	},
 	"from": {
 		"prefix": "from",
 		"body": "from ${1:module} import ${2:symbol}",
 		"description": "from … import",
-		"scope": "source.fate - meta.tag.other.html"
+		"scope": "source.fate"
 	},
 	"if": {
 		"prefix": "if",
 		"body": "if ${1:condition}\n\t$0\nend",
 		"description": "if … end",
-		"scope": "source.fate - meta.tag.other.html"
+		"scope": "source.fate"
 	},
 	"ife": {
 		"prefix": "ife",
 		"body": "if ${1:condition}\n\t$2\nelse\n\t$0\nend",
 		"description": "if … else … end",
-		"scope": "source.fate - meta.tag.other.html"
+		"scope": "source.fate"
 	},
 	"ifei": {
 		"prefix": "ifei",
 		"body": "if ${1:condition}\n\t$2\nelse if ${3:else_condition}\n\t$0\nend",
 		"description": "if … else if … end",
-		"scope": "source.fate - meta.tag.other.html"
+		"scope": "source.fate"
 	},
 	"ifeie": {
 		"prefix": "ifeie",
 		"body": "if ${1:condition}\n\t$2\nelse if ${3:else_condition}\n\t$4\nelse\n\t$0\nend",
 		"description": "if … else if … else … end",
-		"scope": "source.fate - meta.tag.other.html"
+		"scope": "source.fate"
 	},
 	"impa": {
 		"prefix": "impa",
 		"body": "import ${1:module} as ${2:alias}",
 		"description": "import … as",
-		"scope": "source.fate - meta.tag.other.html"
+		"scope": "source.fate"
 	},
 	"imp": {
 		"prefix": "imp",
 		"body": "import ${1:module}",
 		"description": "import",
-		"scope": "source.fate - meta.tag.other.html"
+		"scope": "source.fate"
 	},
 	"lc": {
 		"prefix": "lc",
 		"body": "[${1:expr} for ${2:item} in ${3:list}]",
 		"description": "[for … in]",
-		"scope": "source.fate - punctuation.definition.tag.name.html"
+		"scope": "source.fate"
 	},
 	"lcg": {
 		"prefix": "lcg",
 		"body": "[${1:expr} for ${2:item} in ${3:list} where ${4:guard}]",
 		"description": "[for … in … where]",
-		"scope": "source.fate - punctuation.definition.tag.name.html"
+		"scope": "source.fate"
 	},
 	"letlc": {
 		"prefix": "letlc",
 		"body": "let ${1:var} = [${2:expr} for ${3:item} in ${4:list}]",
 		"description": "let … = [for … in]",
-		"scope": "source.fate - meta.tag.other.html"
+		"scope": "source.fate"
 	},
 	"letlcg": {
 		"prefix": "letlcg",
 		"body": "let ${1:var} = [${2:expr} for ${3:item} in ${4:list} where ${5:guard}]",
 		"description": "let … = [for … in … where]",
-		"scope": "source.fate - meta.tag.other.html"
+		"scope": "source.fate"
 	},
 	"let": {
 		"prefix": "let",
 		"body": "let ${1:var} = ${2:expr}",
 		"description": "let … = …",
-		"scope": "source.fate - meta.tag.other.html"
+		"scope": "source.fate"
 	},
 	"pd": {
 		"prefix": "pd",
 		"body": "${1:expr} | \"${2:string}\"",
 		"description": "expr | \"string\"",
-		"scope": "source.fate - punctuation.definition.tag.name.html"
+		"scope": "source.fate"
 	},
 	"ps": {
 		"prefix": "ps",
 		"body": "${1:expr} | '${2:string}'",
 		"description": "expr | 'string'",
-		"scope": "source.fate - punctuation.definition.tag.name.html"
+		"scope": "source.fate"
 	},
 	"ps1": {
 		"prefix": "ps",
 		"body": "${1:expr} | '${2:string}'",
 		"description": "expr | 'string'",
-		"scope": "source.fate - punctuation.definition.tag.name.html"
+		"scope": "source.fate"
 	},
 	"p": {
 		"prefix": "p",
 		"body": "${1:expr} | ${2:func}",
 		"description": "expr | func",
-		"scope": "source.fate - punctuation.definition.tag.name.html"
+		"scope": "source.fate"
 	},
 	"pstr": {
 		"prefix": "pstr",
 		"body": "\"${1:interpolation}\" [\n  ${2:name} = ${3:value}\n]",
 		"description": "\"str\" [params]",
-		"scope": "source.fate - punctuation.definition.tag.name.html"
+		"scope": "source.fate"
 	}
 }
