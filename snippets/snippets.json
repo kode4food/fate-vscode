@@ -1,4 +1,10 @@
 {
+	"lambda": {
+    "prefix": "la",
+    "body": "(${1:args} → ${2:expr})",
+    "description": "lambda function",
+    "scope": "source.fate - meta.tag.other.html"
+	},	
 	"defa": {
 		"prefix": "defa",
 		"body": "def ${1:func_name}(${2:args})\n\t$0\nend",
