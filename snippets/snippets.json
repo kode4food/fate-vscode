@@ -1,7 +1,7 @@
 {
 	"lm": {
 		"prefix": "lm",
-    "body": "(${1:args}) → ${2:expr}",
+    "body": "${1:args} → ${2:expr}",
     "description": "lambda function: args → expr",
     "scope": "source.fate"
 	},
@@ -16,8 +16,6 @@
     "body": "(${1:args} → ${2:expr})",
     "description": "lambda function: (args → expr)",
     "scope": "source.fate"
-	},
-	"when": {
 	},
 	"defa": {
 		"prefix": "defa",
