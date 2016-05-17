@@ -1,55 +1,75 @@
 {
+	"lm": {
+		"prefix": "lm",
+    "body": "(${1:args}) → ${2:expr}",
+    "description": "lambda function: args → expr",
+    "scope": "source.fate"
+	},
 	"la": {
     "prefix": "la",
-    "body": "${1:args} → ${2:expr}",
-    "description": "lambda function",
+    "body": "(${1:args}) → ${2:expr}",
+    "description": "lambda function: (args) → expr",
     "scope": "source.fate"
 	},
 	"lp": {
     "prefix": "lp",
     "body": "(${1:args} → ${2:expr})",
-    "description": "lambda function",
+    "description": "lambda function: (args → expr)",
     "scope": "source.fate"
+	},
+	"when": {
 	},
 	"defa": {
 		"prefix": "defa",
-		"body": "def ${1:func_name}(${2:args})\n\t$0\nend",
+		"body": [
+			"def ${1:func_name}(${2:args})",
+			"\t$0",
+			"end"
+		],
 		"description": "def() … end",
 		"scope": "source.fate"
 	},
 	"defw": {
 		"prefix": "defw",
-		"body": "def ${1:func_name}(${2:args}) where ${3:guard}\n\t$0\nend",
+		"body": [
+			"def ${1:func_name}(${2:args}) where ${3:guard}",
+			"\t$0",
+			"end"
+		],
 		"description": "def() where … end",
 		"scope": "source.fate"
 	},
 	"def": {
 		"prefix": "def",
-		"body": "def ${1:func_name}\n\t$0\nend",
+		"body": [
+			"def ${1:func_name}",
+			"\t$0",
+			"end"
+		],
 		"description": "def … end",
 		"scope": "source.fate"
 	},
 	"fore": {
 		"prefix": "fore",
-		"body": "for ${1:item} in ${2:list}\n\t$3\nelse\n\t$0\nend",
+		"body": "for ${1:item} in ${2:list}","\t$3","else","\t$0","end",
 		"description": "for … else … end",
 		"scope": "source.fate"
 	},
 	"forw": {
 		"prefix": "forw",
-		"body": "for ${1:item} in ${2:list} where ${3:guard}\n\t$0\nend",
+		"body": "for ${1:item} in ${2:list} where ${3:guard}","\t$0","end",
 		"description": "for where … end",
 		"scope": "source.fate"
 	},
 	"forn": {
 		"prefix": "forn",
-		"body": "for ${1:item} in ${2:list}, ${3:sub_item} in ${4:sub_list}\n\t$0\nend",
+		"body": "for ${1:item} in ${2:list}, ${3:sub_item} in ${4:sub_list}","\t$0","end",
 		"description": "nested for … end",
 		"scope": "source.fate"
 	},
 	"for": {
 		"prefix": "for",
-		"body": "for ${1:item} in ${2:list}\n\t$0\nend",
+		"body": "for ${1:item} in ${2:list}","\t$0","end",
 		"description": "for … end",
 		"scope": "source.fate"
 	},
@@ -67,25 +87,25 @@
 	},
 	"if": {
 		"prefix": "if",
-		"body": "if ${1:condition}\n\t$0\nend",
+		"body": "if ${1:condition}","\t$0","end",
 		"description": "if … end",
 		"scope": "source.fate"
 	},
 	"ife": {
 		"prefix": "ife",
-		"body": "if ${1:condition}\n\t$2\nelse\n\t$0\nend",
+		"body": "if ${1:condition}","\t$2","else","\t$0","end",
 		"description": "if … else … end",
 		"scope": "source.fate"
 	},
 	"ifei": {
 		"prefix": "ifei",
-		"body": "if ${1:condition}\n\t$2\nelse if ${3:else_condition}\n\t$0\nend",
+		"body": "if ${1:condition}","\t$2","else if ${3:else_condition}","\t$0","end",
 		"description": "if … else if … end",
 		"scope": "source.fate"
 	},
 	"ifeie": {
 		"prefix": "ifeie",
-		"body": "if ${1:condition}\n\t$2\nelse if ${3:else_condition}\n\t$4\nelse\n\t$0\nend",
+		"body": "if ${1:condition}","\t$2","else if ${3:else_condition}","\t$4","else","\t$0","end",
 		"description": "if … else if … else … end",
 		"scope": "source.fate"
 	},
@@ -157,8 +177,12 @@
 	},
 	"pstr": {
 		"prefix": "pstr",
-		"body": "\"${1:interpolation}\" [\n  ${2:name} = ${3:value}\n]",
-		"description": "\"str\" [params]",
+		"body": [
+			"'${1:interpolation}' {",
+			"\t${2:name}: ${3:value}",
+			"}"
+		],
+		"description": "'str' {params}",
 		"scope": "source.fate"
 	}
 }
