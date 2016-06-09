@@ -30,7 +30,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(self|it|true|false|global)\b</string>
+					<string>\b(self|it|_|true|false|global)\b</string>
 					<key>name</key>
 					<string>constant.language</string>
 				</dict>
