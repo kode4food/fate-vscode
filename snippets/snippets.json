@@ -1,4 +1,10 @@
 {
+	"comp": {
+		"prefix": "comp",
+    "body": "${1:func} ∘ ${2:func}",
+    "description": "compose functions: func ∘ func",
+    "scope": "source.fate"
+	},
 	"lm": {
 		"prefix": "lm",
     "body": "${1:args} → ${2:expr}",
@@ -49,25 +55,25 @@
 	},
 	"fore": {
 		"prefix": "fore",
-		"body": "for ${1:item} in ${2:list}","\t$3","else","\t$0","end",
+		"body": ["for ${1:item} in ${2:list}","\t$3","else","\t$0","end"],
 		"description": "for … else … end",
 		"scope": "source.fate"
 	},
 	"forw": {
 		"prefix": "forw",
-		"body": "for ${1:item} in ${2:list} where ${3:guard}","\t$0","end",
+		"body": ["for ${1:item} in ${2:list} where ${3:guard}","\t$0","end"],
 		"description": "for where … end",
 		"scope": "source.fate"
 	},
 	"forn": {
 		"prefix": "forn",
-		"body": "for ${1:item} in ${2:list}, ${3:sub_item} in ${4:sub_list}","\t$0","end",
+		"body": ["for ${1:item} in ${2:list}, ${3:sub_item} in ${4:sub_list}","\t$0","end"],
 		"description": "nested for … end",
 		"scope": "source.fate"
 	},
 	"for": {
 		"prefix": "for",
-		"body": "for ${1:item} in ${2:list}","\t$0","end",
+		"body": ["for ${1:item} in ${2:list}","\t$0","end"],
 		"description": "for … end",
 		"scope": "source.fate"
 	},
@@ -85,25 +91,25 @@
 	},
 	"if": {
 		"prefix": "if",
-		"body": "if ${1:condition}","\t$0","end",
+		"body": ["if ${1:condition}","\t$0","end"],
 		"description": "if … end",
 		"scope": "source.fate"
 	},
 	"ife": {
 		"prefix": "ife",
-		"body": "if ${1:condition}","\t$2","else","\t$0","end",
+		"body": ["if ${1:condition}","\t$2","else","\t$0","end"],
 		"description": "if … else … end",
 		"scope": "source.fate"
 	},
 	"ifei": {
 		"prefix": "ifei",
-		"body": "if ${1:condition}","\t$2","else if ${3:else_condition}","\t$0","end",
+		"body": ["if ${1:condition}","\t$2","else if ${3:else_condition}","\t$0","end"],
 		"description": "if … else if … end",
 		"scope": "source.fate"
 	},
 	"ifeie": {
 		"prefix": "ifeie",
-		"body": "if ${1:condition}","\t$2","else if ${3:else_condition}","\t$4","else","\t$0","end",
+		"body": ["if ${1:condition}","\t$2","else if ${3:else_condition}","\t$4","else","\t$0","end"],
 		"description": "if … else if … else … end",
 		"scope": "source.fate"
 	},
