@@ -125,7 +125,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>([\-~?+*•o∘\/÷|:@!=≠(),\.\[\]&lt;&gt;≤≥{}])</string>
+					<string>([\-~?+*•o∘\/÷|&amp;:@!=≠(),\.\[\]&lt;&gt;≤≥{}])</string>
 					<key>name</key>
 					<string>keyword.operator</string>
 				</dict>
