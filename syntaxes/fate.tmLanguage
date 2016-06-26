@@ -119,13 +119,13 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(and|or|like|mod|not|if|unless|else)\b</string>
+					<string>\b(and|or|like|mod|not|if|unless|else|o)\b</string>
 					<key>name</key>
 					<string>keyword.operator</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>([\-~?+*•o∘\/÷|&amp;:@!=≠(),\.\[\]&lt;&gt;≤≥{}])</string>
+					<string>([\-~?+*•∘\/÷|&amp;:@!=≠(),\.\[\]&lt;&gt;≤≥{}])</string>
 					<key>name</key>
 					<string>keyword.operator</string>
 				</dict>
